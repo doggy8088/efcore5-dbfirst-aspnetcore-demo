@@ -17,7 +17,6 @@ namespace efcore5_dbfirst_aspnetcore_demo.Models
         public decimal Budget { get; set; }
         public DateTime StartDate { get; set; }
         public int? InstructorId { get; set; }
-        public byte[] RowVersion { get; set; }
 
         public virtual Person Instructor { get; set; }
         public virtual ICollection<Course> Courses { get; set; }
